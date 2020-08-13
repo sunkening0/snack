@@ -7,6 +7,7 @@ import org.activiti.engine.delegate.TaskListener;
  *  assignee的值用监听器实现
  */
 public class MyTaskListener implements TaskListener {
+
     @Override
     public void notify(DelegateTask delegateTask) {
         //这里指定任务负责人
