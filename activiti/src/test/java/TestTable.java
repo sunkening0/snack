@@ -40,6 +40,22 @@ public class TestTable {
     }
 
     /**
+     * 流程定义删除
+     * act_ru_deployment 和  act_ru_procdef 流程定义数据会被删除
+     */
+    @Test
+    public void deleteProcess(){
+        //创建ProcessEngine对象
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+
+        RepositoryService repositoryService = processEngine.getRepositoryService();
+
+        //执行删除流程定义  参数是流程部署id  （act_re_depoyment）
+        repositoryService.deleteDeployment("1");
+
+    }
+
+    /**
      * 流程实例启动
      * 流程定义（就是我们画的bpmn图，也就是bpmn文件，本身是xml文件）
      * 流程部署（就是把流程定义的内容持久化到数据库中）流程定义的部署

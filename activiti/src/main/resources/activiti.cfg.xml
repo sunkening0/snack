@@ -12,7 +12,7 @@
     </bean>
     <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
         <property name="dataSource" ref="dataSource"/>
-        <property name="databaseSchemaUpdate" value="false"/>
+        <property name="databaseSchemaUpdate" value="true"/>
     </bean>
 
 </beans>
