@@ -8,7 +8,6 @@ import org.activiti.engine.delegate.TaskListener;
  */
 public class MyTaskListener implements TaskListener {
 
-
     @Override
     public void notify(DelegateTask delegateTask) {
         //这里指定任务负责人
