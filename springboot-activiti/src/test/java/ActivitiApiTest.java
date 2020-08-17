@@ -70,8 +70,8 @@ public class ActivitiApiTest {
         TaskService taskService = processEngine.getTaskService();
 
         //3.根据流程定义的key，负责人assignee来实现当前用户的任务列表查询
-        List<Task> taskList = taskService.createTaskQuery().processInstanceId("a15423e0-dd66-11ea-94d0-1063c85592f7")
-                .taskAssignee("lisi")
+        List<Task> taskList = taskService.createTaskQuery().processInstanceId("b106e1f2-e038-11ea-8c4d-1063c85592f7")
+                .taskAssignee("sara")
                 .list();
         for(Task task : taskList){
             System.out.println(task.getId());
