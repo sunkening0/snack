@@ -50,7 +50,7 @@ public class ActivitiApiTest {
         RuntimeService runtimeService = processEngine.getRuntimeService();
 
         //key是唯一标识
-        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess_4");
+        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess_8");
 
         System.out.println("流程部署ID："+processInstance.getDeploymentId());
         System.out.println("流程实例ID："+processInstance.getId());
@@ -70,8 +70,8 @@ public class ActivitiApiTest {
         TaskService taskService = processEngine.getTaskService();
 
         //3.根据流程定义的key，负责人assignee来实现当前用户的任务列表查询
-        List<Task> taskList = taskService.createTaskQuery().processInstanceId("b106e1f2-e038-11ea-8c4d-1063c85592f7")
-                .taskAssignee("sara")
+        List<Task> taskList = taskService.createTaskQuery().processInstanceId("70f67d4d-e057-11ea-8cc6-1063c85592f7")
+                .taskAssignee("Karen")
                 .list();
         for(Task task : taskList){
             System.out.println(task.getId());

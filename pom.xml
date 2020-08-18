@@ -11,6 +11,7 @@
     <modules>
         <module>activiti</module>
         <module>springboot-activiti</module>
+        <module>modeler</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
