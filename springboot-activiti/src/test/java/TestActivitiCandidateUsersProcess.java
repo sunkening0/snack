@@ -54,6 +54,7 @@ public class TestActivitiCandidateUsersProcess {
         System.out.println("流程定义的ID："+pi.getProcessDefinitionId());
     }
 
+
     /**
      * 查询组任务
      */
