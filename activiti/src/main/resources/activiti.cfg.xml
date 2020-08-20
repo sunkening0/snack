@@ -6,7 +6,7 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/activiti?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false&amp;serverTimezone=UTC" />
+        <property name="url" value="jdbc:mysql://localhost:3306/active4j-flow?useUnicode=true&amp;characterEncoding=UTF8&amp;useSSL=false&amp;serverTimezone=UTC&amp;nullCatalogMeansCurrent=true" />
         <property name="username" value="root" />
         <property name="password" value="1234" />
     </bean>
